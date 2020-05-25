@@ -1,0 +1,728 @@
+/* Start Main Rules */
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1000;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(46, 46, 46, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-family: 'Acme', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.special-col{
+    color: rgb(122, 226, 245);
+}
+
+.up-case{
+    text-transform: uppercase;
+}
+
+/* End Main Rules */
+
+/* Start Header */
+
+.header{
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #FFF;
+}
+
+.header .navbar{
+    overflow: hidden;
+    padding: 30px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header .navbar h4 {
+    display: inline;
+}
+
+.header .navbar .links{
+    float: right;
+}
+
+.header .h-content{
+    text-align: center;
+    padding-top: 20%;
+}
+
+.header .h-content h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 4px;
+    margin-bottom: 0;
+
+}
+
+.header .h-content p{
+    margin-top: 5px;
+    margin-bottom: 33px;
+}
+
+.header button{
+    background: transparent;
+    padding: 5px 25px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    font-family: 'Merriweather Sans', sans-serif;
+    cursor: pointer;
+}
+.header button:first-of-type{
+    margin-right: 10px;
+}
+
+.header button:hover{
+    background-color: rgb(110, 206, 223);
+    color: #FFF;
+}
+
+.header .arrow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header .arrow i{
+    border: 1px solid #929090;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* End Header */
+
+/* Start Features */
+
+.features{
+    margin-top: 40px;
+    overflow: hidden;
+    height: 300px;
+    padding: 0 25px;
+}
+
+.features .box{
+    float: left;
+    width: 25%;
+    padding: 10px 25px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.features .box h3{
+    color: tomato;
+}
+
+.features .box img{
+    height: 70px;
+    width: 70px;
+}
+
+.features .box p {
+    line-height: 1.4;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.features .box:hover h3{
+    transition: all .7s ease-in-out;
+    color: rgb(2, 0, 0);
+}
+
+/* End Features */
+
+/* Start Subscibe */
+
+.subscribe{
+    background-image: url('../images/subscribe.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.subscribe form {
+    padding: 125px 0;
+    text-align: center;
+    max-height: 100%;
+
+}
+
+.subscribe form input {
+    padding: 8px 15px;
+    margin-right: 25px;
+    width: 350px;
+    border-radius: 7px;
+    border: 1px solid #FFF;
+    /* background: transparent; */
+    background-color: rgba(223, 219, 219, 0.1);
+}
+
+.subscribe ::-webkit-input-placeholder{
+    color: #FFF;
+}
+
+.subscribe ::-moz-input-placeholder{
+    color: #FFF;
+}
+
+.subscribe ::-ms-input-placeholder{
+    color: #FFF;
+}
+
+.subscribe form button {
+    background: transparent;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 8px 30px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+.subscribe form button:hover{
+    background-color: rgb(110, 206, 223);
+
+}
+
+/* End Subscibe */
+
+/* Start Engineers */
+
+.eng-logo{
+    margin-left: 575px;
+    border-top: 3px solid rgb(194, 192, 191);
+    border-bottom: 3px solid rgb(110, 206, 223);
+    padding: 20px 10px 10px 10px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.eng-logo .fa-user-tie{   
+    padding: 20px 10px;
+    color: rgb(194, 192, 191);
+}
+
+.eng-logo .eng-header {
+    color: rgb(110, 206, 223);
+    font-size: xx-large;
+    font-family: 'Patrick Hand', cursive;
+    height: 100%;
+}
+
+.engineers{
+    background-image: url('../images/engineers.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.engineers .fa-chevron-right,
+.engineers .fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    color: rgb(219, 217, 217);
+    cursor: pointer;
+}
+
+.engineers .fa-chevron-right:hover,
+.engineers .fa-chevron-left:hover{
+    color: tomato;
+}
+
+.engineers .fa-chevron-right{
+    right: 0;
+}
+
+.engineers .fa-chevron-left{
+    left: 0;
+}
+
+.engineers .eng {
+    text-align: center;
+    color: #FFF;
+}
+
+.engineers .eng img {
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 30px 0;
+}
+
+.engineers .eng p {
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* End Engineers */
+
+.special-h3 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Start Categories */
+
+.cat-logo{
+    margin-left: 575px;
+    border-top: 3px solid rgb(194, 192, 191);
+    border-bottom: 3px solid rgb(110, 206, 223);
+    padding: 20px 10px 10px 10px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.cat-logo .fa-artstation{   
+    padding: 20px 10px;
+    color: rgb(194, 192, 191);
+}
+
+.cat-logo .cat-header {
+    color: rgb(110, 206, 223);
+    font-size: xx-large;
+    font-family: 'Patrick Hand', cursive;
+    height: 100%;
+}
+
+.categories {
+    margin-top: 30px;
+    overflow: hidden;
+    height: 260px;
+    margin-bottom: 20px;
+}
+
+.categories .cats {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.categories .cats img {
+    width: 230px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid rgb(236, 187, 187);
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.categories .cats:hover img{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+.categories .cats h3 {
+    font-family: 'Acme', sans-serif;
+    color: rgb(185, 184, 184);
+    text-transform: uppercase;
+}
+
+.categories .cats:hover h3 {
+    color: rgb(37, 37, 37);
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+
+/* Start Living Category */
+
+.living{
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.living .container{
+    float: left;
+    width: 70%;
+}
+
+.living .info {
+    float: left;
+    width: 25%;
+    padding: 2.5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(179, 204, 150);
+    height: 100%;
+}
+
+.living .info h2 {
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+}
+
+.living .living-img img {
+    height: 350;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: 2px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.living .fa-chevron-right,
+.living .fa-chevron-left{
+    position: absolute;
+    top: 10%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.living .fa-chevron-right:hover,
+.living .fa-chevron-left:hover{
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
+}
+
+.living .fa-chevron-right{
+    right: 40;
+}
+
+.living .fa-chevron-left{
+    left: 40;
+}
+
+/* End Living Category */
+
+/* Start Pathroom Category */
+
+.pathroom{
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.pathroom .container{
+    float: left;
+    width: 70%;
+}
+
+.pathroom .info {
+    float: right;
+    width: 25%;
+    padding: 2.5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(141, 173, 192);
+    height: 100%
+}
+
+.pathroom .info h2 {
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+}
+
+.pathroom .pathroom-img img {
+    height: 350;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 2px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0
+}
+
+.pathroom .fa-chevron-right,
+.pathroom .fa-chevron-left{
+    position: absolute;
+    top: 10%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.pathroom .fa-chevron-right:hover,
+.pathroom .fa-chevron-left:hover{
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
+}
+
+.pathroom .fa-chevron-right{
+    right: 40;
+}
+
+.pathroom .fa-chevron-left{
+    left: 40;
+}
+
+/* End Pathroom Category */
+
+/* Start Bedroom Category */
+
+.bedroom{
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.bedroom .container{
+    float: left;
+    width: 70%;
+}
+
+.bedroom .info {
+    float: left;
+    width: 25%;
+    padding: 2.5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 150, 183);
+    height: 100%;
+}
+
+.bedroom .info h2 {
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+}
+
+.bedroom .bedroom-img img {
+    height: 350;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: 2px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.bedroom .fa-chevron-right,
+.bedroom .fa-chevron-left{
+    position: absolute;
+    top: 10%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.bedroom .fa-chevron-right:hover,
+.bedroom .fa-chevron-left:hover{
+    color: rgb(248, 245, 245);
+    border: 3px solid white;
+
+}
+
+.bedroom .fa-chevron-right{
+    right: 40;
+}
+
+.bedroom .fa-chevron-left{
+    left: 40;
+}
+
+/* End Bedroom Category */
+
+/* Start Lighting Category */
+
+.lighting{
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lighting .container{
+    float: left;
+    width: 70%;
+    background-color: rgb(255, 254, 254);
+}
+
+.lighting .info {
+    float: right;
+    width: 25%;
+    padding: 2.5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 158, 133);
+    height: 100%;
+}
+
+.lighting .info h2 {
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+}
+
+.lighting .lighting-img img {
+    height: 350;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 2px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.lighting .fa-chevron-right,
+.lighting .fa-chevron-left{
+    position: absolute;
+    top: 10%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.lighting .fa-chevron-right:hover,
+.lighting .fa-chevron-left:hover{
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
+}
+
+.lighting .fa-chevron-right{
+    right: 40;
+}
+
+.lighting .fa-chevron-left{
+    left: 40;
+}
+
+/* End Lighting Category */
+
+/* End Categories */
+
+/* Start Footer */
+
+.footer{
+    overflow: hidden;
+    height: 200px;
+    border-top: 2px solid rgb(177, 177, 177);
+    background-color: rgb(236, 236, 236);
+}
+
+.footer .section1 {
+    float: left;
+    width: 25%;
+    text-align: center
+
+}
+
+.footer .section1 h2{
+    text-transform: uppercase;
+}
+
+.footer .section1 span {
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.footer .section2{
+    float: left;
+    width: 60%;
+    margin-left: 15%;
+    overflow: hidden;
+
+}
+
+.footer .section2 .box-section {
+    float: left;
+    width: 30%;
+}
+
+.footer .section2 .box-section ul {
+    list-style: none;
+    padding: 4px;
+}
+
+.footer .section2 .box-section ul li {
+    padding-bottom: 5px;
+    
+}
+
+.footer .section2 .box-section ul li a {
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+
+}
+
+.footer .section2 .box-section ul li a:hover {
+    color: rgb(86, 191, 209);
+}
+
+/* End Footer */
