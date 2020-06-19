@@ -6,10 +6,14 @@ body{
 }
 
 .container{
-    width: 1000;
+    width: 75%;
     height: 100%;
     margin: auto;
     position: relative;
+}
+
+input, button{
+    outline: none;
 }
 
 .overlay{
@@ -135,7 +139,6 @@ h2, h3{
 .features{
     margin-top: 40px;
     overflow: hidden;
-    height: 300px;
     padding: 0 25px;
 }
 
@@ -159,7 +162,7 @@ h2, h3{
 
 .features .box p {
     line-height: 1.4;
-    font-family: cursive;
+    font-family: monospace;
     font-style: italic;
 }
 
@@ -180,25 +183,23 @@ h2, h3{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 300px;
     margin-bottom: 50px;
+    height: 60vh;
 }
 
 .subscribe form {
-    padding: 125px 0;
     text-align: center;
-    max-height: 100%;
-
+    padding-top: 30vh;
 }
 
 .subscribe form input {
     padding: 8px 15px;
     margin-right: 25px;
-    width: 350px;
+    width: 40%;
     border-radius: 7px;
     border: 1px solid #FFF;
-    /* background: transparent; */
     background-color: rgba(223, 219, 219, 0.1);
+    color: white;
 }
 
 .subscribe ::-webkit-input-placeholder{
@@ -235,25 +236,34 @@ h2, h3{
 
 /* Start Engineers */
 
-.eng-logo{
-    margin-left: 575px;
+.logo{
     border-top: 3px solid rgb(194, 192, 191);
     border-bottom: 3px solid rgb(110, 206, 223);
-    padding: 20px 10px 10px 10px;
     border-radius: 15px;
-    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
 }
 
-.eng-logo .fa-user-tie{   
-    padding: 20px 10px;
+.logo .fa-user-tie{   
     color: rgb(194, 192, 191);
+    float: left;
+    margin-right: 10px;
 }
 
-.eng-logo .eng-header {
+.logo .fa-artstation{
+    color: rgb(194, 192, 191);
+    float: left;
+    margin-right: 10px;
+}
+
+.logo .logo-header {
     color: rgb(110, 206, 223);
     font-size: xx-large;
     font-family: 'Patrick Hand', cursive;
-    height: 100%;
+    float: left;
 }
 
 .engineers{
@@ -264,7 +274,7 @@ h2, h3{
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 60vh;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -317,31 +327,8 @@ h2, h3{
 
 /* Start Categories */
 
-.cat-logo{
-    margin-left: 575px;
-    border-top: 3px solid rgb(194, 192, 191);
-    border-bottom: 3px solid rgb(110, 206, 223);
-    padding: 20px 10px 10px 10px;
-    border-radius: 15px;
-    height: 100%;
-}
-
-.cat-logo .fa-artstation{   
-    padding: 20px 10px;
-    color: rgb(194, 192, 191);
-}
-
-.cat-logo .cat-header {
-    color: rgb(110, 206, 223);
-    font-size: xx-large;
-    font-family: 'Patrick Hand', cursive;
-    height: 100%;
-}
-
 .categories {
-    margin-top: 30px;
     overflow: hidden;
-    height: 260px;
     margin-bottom: 20px;
 }
 
@@ -355,8 +342,8 @@ h2, h3{
 }
 
 .categories .cats img {
-    width: 230px;
-    height: 160px;
+    width: 90%;
+    height: 25%;
     border-radius: 10px;
     border: 2px solid rgb(236, 187, 187);
     filter: gray;
@@ -387,11 +374,10 @@ h2, h3{
     transition: all .6s ease-in-out;
 }
 
-
-/* Start Living Category */
+    /* Start Living Category */
 
 .living{
-    height: 350px;
+    height: 45%;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -403,12 +389,12 @@ h2, h3{
 }
 
 .living .info {
+    height: 100%;
     float: left;
     width: 25%;
     padding: 2.5%;
     color: rgb(255, 255, 255);
     background-color: rgb(179, 204, 150);
-    height: 100%;
 }
 
 .living .info h2 {
@@ -417,7 +403,7 @@ h2, h3{
 }
 
 .living .living-img img {
-    height: 350;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -459,7 +445,7 @@ h2, h3{
 /* Start Pathroom Category */
 
 .pathroom{
-    height: 350px;
+    height: 45%;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -486,7 +472,7 @@ h2, h3{
 }
 
 .pathroom .pathroom-img img {
-    height: 350;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -528,7 +514,7 @@ h2, h3{
 /* Start Bedroom Category */
 
 .bedroom{
-    height: 350px;
+    height: 45%;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -555,7 +541,7 @@ h2, h3{
 }
 
 .bedroom .bedroom-img img {
-    height: 350;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -598,7 +584,7 @@ h2, h3{
 /* Start Lighting Category */
 
 .lighting{
-    height: 350px;
+    height: 45%;
     overflow: hidden;
     border-radius: 20px;
     margin-top: 50px;
@@ -626,7 +612,7 @@ h2, h3{
 }
 
 .lighting .lighting-img img {
-    height: 350;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -671,7 +657,7 @@ h2, h3{
 
 .footer{
     overflow: hidden;
-    height: 200px;
+    height: 30vh;
     border-top: 2px solid rgb(177, 177, 177);
     background-color: rgb(236, 236, 236);
 }
@@ -680,7 +666,6 @@ h2, h3{
     float: left;
     width: 25%;
     text-align: center
-
 }
 
 .footer .section1 h2{
@@ -697,7 +682,6 @@ h2, h3{
     width: 60%;
     margin-left: 15%;
     overflow: hidden;
-
 }
 
 .footer .section2 .box-section {
@@ -712,7 +696,6 @@ h2, h3{
 
 .footer .section2 .box-section ul li {
     padding-bottom: 5px;
-    
 }
 
 .footer .section2 .box-section ul li a {
@@ -727,6 +710,8 @@ h2, h3{
 
 /* End Footer */
 
+/* Start Media Query To Different Screen */
+
 @media screen and (max-width: 425px){
     /* Start Header */
 
@@ -735,11 +720,7 @@ h2, h3{
 }
 
 .header{
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    background-position: top;
+    width: 100%;
 }
 
 .header .navbar h4 {
@@ -775,35 +756,306 @@ h2, h3{
 
 .features{
     margin-top: 40px;
-    height: 100%;
     text-align: center;
 }
 
 .features .box{
-    width: 98%;
+    width: 100%;
     font-size: 10px;
-}
-
-.features .box h3{
-    color: tomato;
-}
-
-.features .box img{
-    height: 70px;
-    width: 70px;
-}
-
-.features .box p {
-    line-height: 1.4;
-    font-family: cursive;
-    font-style: italic;
-}
-
-.features .box:hover h3{
-    transition: all .7s ease-in-out;
-    color: rgb(2, 0, 0);
 }
 
 /* End Features */
 
+/* Start Subscibe */
+
+.subscribe{
+    background-image: url('../images/subscribe.jpg');
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
+
+.subscribe form {
+    font-size: 10px;
+}
+
+.subscribe form input {
+    padding: 5px 10px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.subscribe ::-webkit-input-placeholder{
+    color: #FFF;
+}
+
+.subscribe ::-moz-input-placeholder{
+    color: #FFF;
+}
+
+.subscribe ::-ms-input-placeholder{
+    color: #FFF;
+}
+
+.subscribe form button {
+    padding: 5px 20px;
+}
+
+/* End Subscibe */
+
+/* Start Engineers */
+
+.logo{
+    padding: 7px;
+}
+
+.logo .fa-user-tie{   
+    font-size: 20px;
+}
+
+.logo .fa-artstation{
+    font-size: 20px;
+}
+
+.logo .logo-header {
+    font-size: large;
+}
+
+.engineers{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 9px;
+}
+
+.engineers .fa-chevron-right{
+    right: -7%;
+}
+
+.engineers .fa-chevron-left{
+    left: -7%;
+}
+
+.engineers .eng img {
+    width:100px;
+    height: 100px;
+}
+
+/* End Engineers */
+
+/* Start Categories */
+
+.categories .cats {
+    width: 50%;
+}
+
+.categories .cats img {
+    height: 20%;
+    -webkit-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.categories .cats h3 {
+    font-size: 15px;
+}
+
+/* Start Living Category */
+
+.living{
+    height: 37%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.living .info{
+    font-size: 8px;
+}
+.living .info h2 {
+    font-size: 12px;
+}
+
+.living .fa-chevron-right,
+.living .fa-chevron-left{
+    font-size: 10px;
+    top: 5%;
+    border: 1px solid black;
+}
+
+.living .fa-chevron-right:hover,
+.living .fa-chevron-left:hover{
+    border: 1px solid white;
+}
+
+.living .fa-chevron-right{
+    right: 10;
+}
+
+.living .fa-chevron-left{
+    left: 10;
+}
+
+/* End Living Category */
+
+/* Start Pathroom Category */
+
+.pathroom{
+    height: 37%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.pathroom .info {
+    font-size: 8px;
+}
+
+.pathroom .info h2 {
+    font-size: 12px;
+}
+
+.pathroom .fa-chevron-right,
+.pathroom .fa-chevron-left{
+    font-size: 10;
+    top: 5%;
+    border: 1px solid black;
+}
+
+.pathroom .fa-chevron-right:hover,
+.pathroom .fa-chevron-left:hover{
+    border: 1px solid white;
+}
+
+.pathroom .fa-chevron-right{
+    right: 10;
+}
+
+.pathroom .fa-chevron-left{
+    left: 10;
+}
+
+/* End Pathroom Category */
+
+/* Start Bedroom Category */
+
+.bedroom{
+    height: 37%;
+    margin: 20px 0;
+}
+
+.bedroom .info {
+    font-size: 8px;
+}
+
+.bedroom .info h2 {
+    font-size: 12px;
+}
+
+.bedroom .fa-chevron-right,
+.bedroom .fa-chevron-left{
+    font-size: 10px;
+    top: 5%;
+    border: 1px solid black;
+}
+
+.bedroom .fa-chevron-right:hover,
+.bedroom .fa-chevron-left:hover{
+    border: 1px solid white;
+}
+
+.bedroom .fa-chevron-right{
+    right: 10;
+}
+
+.bedroom .fa-chevron-left{
+    left: 10;
+}
+
+/* End Bedroom Category */
+
+/* Start Lighting Category */
+
+.lighting{
+    height: 37%;
+    margin: 20px 0;
+}
+
+.lighting .info {
+    font-size: 8px;
+}
+
+.lighting .info h2 {
+    font-size: 12px;
+}
+
+.lighting .fa-chevron-right,
+.lighting .fa-chevron-left{
+    font-size: 10px;
+    top: 5%;
+    border: 1px solid black;
+}
+
+.lighting .fa-chevron-right:hover,
+.lighting .fa-chevron-left:hover{
+    border: 1px solid white;
+}
+
+.lighting .fa-chevron-right{
+    right: 10;
+}
+
+.lighting .fa-chevron-left{
+    left: 10;
+}
+
+/* End Lighting Category */
+
+/* End Categories */
+
+/* Start Footer */
+
+.footer{
+    height: 30vh;
+    text-align: center;
+}
+
+.footer .container{
+    width: 100%;
+}
+
+.footer .section1 {
+    width: 20%;
+}
+
+.footer .section1 h2{
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.footer .section2{
+    width: 70%;
+    margin-left: 10%;
+    font-size: 10px;
+}
+
+.footer .section2 .box-section ul li {
+    padding-bottom: 5px;
+}
+
+.footer  .sp-f{
+    font-size: 6px;
+    display: inline-block;
+    background-color: black;
+    color: rgb(231, 231, 231);
+    padding: 6px;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+
+/* End Footer */
+
+}
+
+/* End Media Query To Different Screen */
