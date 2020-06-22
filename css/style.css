@@ -1,15 +1,28 @@
 /* Start Main Rules */
-
-body{
-    font-family: 'Merriweather Sans', sans-serif;
+*{
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
 .container{
-    width: 1000;
-    height: 100%;
+    width: 75%;
     margin: auto;
     position: relative;
+}
+
+.special-container{
+    width: 92%;
+    margin: auto;
+    position: relative;
+}
+
+input, button{
+    outline: none;
 }
 
 .overlay{
@@ -39,11 +52,44 @@ h2, h3{
     text-transform: uppercase;
 }
 
+/* Arrows */
+
+.fa-chevron-right,
+.fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    color: rgb(245, 223, 127);
+    cursor: pointer;
+    border: 2px solid rgb(247, 232, 165);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 15px;
+    transition: .4s;
+    box-shadow: 1px 1px 5px 1px rgb(247, 232, 165);
+    background-color: rgb(255, 253, 253);
+}
+
+.fa-chevron-right:hover,
+.fa-chevron-left:hover{
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    background-color: rgb(247, 232, 165);
+}
+
+.fa-chevron-right{
+    right: 20px;
+}
+
+.fa-chevron-left{
+    left: 20px;
+}
+
 /* End Main Rules */
 
 /* Start Header */
 
 .header{
+    height: 100vh;
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -74,7 +120,7 @@ h2, h3{
 
 .header .h-content{
     text-align: center;
-    padding-top: 20%;
+    padding-top: 30vh;
 }
 
 .header .h-content h1{
@@ -88,6 +134,7 @@ h2, h3{
 .header .h-content p{
     margin-top: 5px;
     margin-bottom: 33px;
+    font-size: 12px;
 }
 
 .header button{
@@ -135,16 +182,14 @@ h2, h3{
 .features{
     margin-top: 40px;
     overflow: hidden;
-    height: 300px;
-    padding: 0 25px;
+    padding: 0 10px;
 }
 
 .features .box{
     float: left;
     width: 25%;
-    padding: 10px 25px;
+    padding: 10px 10px;
     text-align: center;
-    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -159,13 +204,27 @@ h2, h3{
 
 .features .box p {
     line-height: 1.4;
-    font-family: cursive;
+    font-family: monospace;
     font-style: italic;
 }
 
 .features .box:hover h3{
     transition: all .7s ease-in-out;
     color: rgb(2, 0, 0);
+}
+
+@media screen and (max-width: 800px){
+    .features .box p{
+        line-height: 1;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    .features .box{
+        width: 50%;
+    }
 }
 
 /* End Features */
@@ -180,37 +239,40 @@ h2, h3{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-bottom: 30px;
     height: 300px;
-    margin-bottom: 50px;
 }
 
-.subscribe form {
-    padding: 125px 0;
+.subscribe .overlay form {
     text-align: center;
-    max-height: 100%;
-
+    padding-top: 150px;
 }
 
 .subscribe form input {
     padding: 8px 15px;
     margin-right: 25px;
-    width: 350px;
+    width: 40%;
+    line-height: 100%;
     border-radius: 7px;
     border: 1px solid #FFF;
-    /* background: transparent; */
     background-color: rgba(223, 219, 219, 0.1);
+    color: white;
 }
 
 .subscribe ::-webkit-input-placeholder{
-    color: #FFF;
+    color: rgba(241, 239, 239, .5);
+    line-height: 1;
+    font-size: 12px;
 }
 
 .subscribe ::-moz-input-placeholder{
-    color: #FFF;
+    color: rgba(241, 239, 239, .5);
+    font-size: 12px;
 }
 
 .subscribe ::-ms-input-placeholder{
-    color: #FFF;
+    color: rgba(241, 239, 239, .5);
+    font-size: 12px;
 }
 
 .subscribe form button {
@@ -235,25 +297,33 @@ h2, h3{
 
 /* Start Engineers */
 
-.eng-logo{
-    margin-left: 575px;
-    border-top: 3px solid rgb(194, 192, 191);
-    border-bottom: 3px solid rgb(110, 206, 223);
-    padding: 20px 10px 10px 10px;
-    border-radius: 15px;
-    height: 100%;
+.logo{
+    border-bottom: 1px solid rgb(194, 192, 191);
+    border-right: 1px solid rgb(194, 192, 191);
+    padding: 0 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: calc(50vw - 78px);
+    height: 40px;
 }
 
-.eng-logo .fa-user-tie{   
-    padding: 20px 10px;
+.logo .fa-user-tie{   
     color: rgb(194, 192, 191);
+    float: left;
+    margin-right: 10px;
 }
 
-.eng-logo .eng-header {
+.logo .fa-artstation{
+    color: rgb(194, 192, 191);
+    float: left;
+    margin-right: 10px;
+}
+
+.logo .logo-header {
     color: rgb(110, 206, 223);
     font-size: xx-large;
     font-family: 'Patrick Hand', cursive;
-    height: 100%;
+    float: left;
 }
 
 .engineers{
@@ -265,29 +335,13 @@ h2, h3{
     background-size: cover;
     background-position: center;
     height: 400px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.engineers .fa-chevron-right,
-.engineers .fa-chevron-left{
+.engineers i{
     position: absolute;
-    top: 50%;
-    color: rgb(219, 217, 217);
-    cursor: pointer;
-}
-
-.engineers .fa-chevron-right:hover,
-.engineers .fa-chevron-left:hover{
-    color: tomato;
-}
-
-.engineers .fa-chevron-right{
-    right: 0;
-}
-
-.engineers .fa-chevron-left{
-    left: 0;
 }
 
 .engineers .eng {
@@ -296,8 +350,8 @@ h2, h3{
 }
 
 .engineers .eng img {
-    width:150px;
-    height: 150px;
+    width: 150px;
+    height: 200px;
     border-radius: 50%;
     padding: 30px 0;
 }
@@ -305,7 +359,7 @@ h2, h3{
 .engineers .eng p {
     font-style: italic;
     line-height: 1.5;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* End Engineers */
@@ -317,46 +371,34 @@ h2, h3{
 
 /* Start Categories */
 
-.cat-logo{
-    margin-left: 575px;
-    border-top: 3px solid rgb(194, 192, 191);
-    border-bottom: 3px solid rgb(110, 206, 223);
-    padding: 20px 10px 10px 10px;
-    border-radius: 15px;
-    height: 100%;
-}
-
-.cat-logo .fa-artstation{   
-    padding: 20px 10px;
-    color: rgb(194, 192, 191);
-}
-
-.cat-logo .cat-header {
-    color: rgb(110, 206, 223);
-    font-size: xx-large;
-    font-family: 'Patrick Hand', cursive;
-    height: 100%;
-}
-
 .categories {
-    margin-top: 30px;
     overflow: hidden;
-    height: 260px;
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .categories .cats {
     float: left;
     width: 25%;
+    padding: 10px 4px;
     text-align: center;
-    margin-top: 20px;
     cursor: pointer;
-    
+}
+
+@media screen and (max-width: 900px){
+
+    .categories .cats{
+        padding: 0 5px;
+        width: 50%;
+    }
+
+    .categories .cats h3{
+        font-size: 14px;
+    }
 }
 
 .categories .cats img {
-    width: 230px;
-    height: 160px;
+    height: 150px;
+    width: 100%;
     border-radius: 10px;
     border: 2px solid rgb(236, 187, 187);
     filter: gray;
@@ -387,28 +429,29 @@ h2, h3{
     transition: all .6s ease-in-out;
 }
 
-
-/* Start Living Category */
+    /* Start Living Category */
 
 .living{
-    height: 350px;
+    height: 300px;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 50px;
 }
 
-.living .container{
+.living .content .container{
+    height: inherit;
     float: left;
     width: 70%;
 }
 
 .living .info {
+    height: inherit;
+    font-size: 12px;
     float: left;
-    width: 25%;
+    width: 30%;
     padding: 2.5%;
     color: rgb(255, 255, 255);
     background-color: rgb(179, 204, 150);
-    height: 100%;
 }
 
 .living .info h2 {
@@ -416,42 +459,17 @@ h2, h3{
     text-transform: uppercase;
 }
 
+.living .info p{
+    line-height: 1.5;
+}
+
 .living .living-img img {
-    height: 350;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-left: 2px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-
-.living .fa-chevron-right,
-.living .fa-chevron-left{
-    position: absolute;
-    top: 10%;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border: 3px solid black;
-    padding: 5px;
-}
-
-.living .fa-chevron-right:hover,
-.living .fa-chevron-left:hover{
-    color: rgb(255, 255, 255);
-    border: 3px solid white;
-}
-
-.living .fa-chevron-right{
-    right: 40;
-}
-
-.living .fa-chevron-left{
-    left: 40;
 }
 
 /* End Living Category */
@@ -459,25 +477,27 @@ h2, h3{
 /* Start Pathroom Category */
 
 .pathroom{
-    height: 350px;
+    height: 300px;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
-.pathroom .container{
+.pathroom .content .container{
+    height: inherit;
     float: left;
     width: 70%;
 }
 
 .pathroom .info {
+    height: inherit;
+    font-size: 12px;
     float: right;
-    width: 25%;
+    width: 30%;
     padding: 2.5%;
     color: rgb(255, 255, 255);
     background-color: rgb(141, 173, 192);
-    height: 100%
 }
 
 .pathroom .info h2 {
@@ -485,42 +505,17 @@ h2, h3{
     text-transform: uppercase;
 }
 
+.pathroom .info p{
+    line-height: 1.5;
+}
+
 .pathroom .pathroom-img img {
-    height: 350;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-right: 2px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0
-}
-
-.pathroom .fa-chevron-right,
-.pathroom .fa-chevron-left{
-    position: absolute;
-    top: 10%;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border: 3px solid black;
-    padding: 5px;
-}
-
-.pathroom .fa-chevron-right:hover,
-.pathroom .fa-chevron-left:hover{
-    color: rgb(255, 255, 255);
-    border: 3px solid white;
-}
-
-.pathroom .fa-chevron-right{
-    right: 40;
-}
-
-.pathroom .fa-chevron-left{
-    left: 40;
 }
 
 /* End Pathroom Category */
@@ -528,25 +523,27 @@ h2, h3{
 /* Start Bedroom Category */
 
 .bedroom{
-    height: 350px;
+    height: 300px;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
-.bedroom .container{
+.bedroom .content .container{
     float: left;
     width: 70%;
+    height: inherit;
 }
 
 .bedroom .info {
+    height: inherit;
+    font-size: 12px;
     float: left;
-    width: 25%;
+    width: 30%;
     padding: 2.5%;
     color: rgb(255, 255, 255);
     background-color: rgb(192, 150, 183);
-    height: 100%;
 }
 
 .bedroom .info h2 {
@@ -554,43 +551,17 @@ h2, h3{
     text-transform: uppercase;
 }
 
+.bedroom .info p{
+    line-height: 1.5;
+}
+
 .bedroom .bedroom-img img {
-    height: 350;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-left: 2px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-
-.bedroom .fa-chevron-right,
-.bedroom .fa-chevron-left{
-    position: absolute;
-    top: 10%;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border: 3px solid black;
-    padding: 5px;
-}
-
-.bedroom .fa-chevron-right:hover,
-.bedroom .fa-chevron-left:hover{
-    color: rgb(248, 245, 245);
-    border: 3px solid white;
-
-}
-
-.bedroom .fa-chevron-right{
-    right: 40;
-}
-
-.bedroom .fa-chevron-left{
-    left: 40;
 }
 
 /* End Bedroom Category */
@@ -598,26 +569,28 @@ h2, h3{
 /* Start Lighting Category */
 
 .lighting{
-    height: 350px;
+    height: 300px;
     overflow: hidden;
     border-radius: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.lighting .container{
+.lighting .content .container{
+    height: inherit;
     float: left;
     width: 70%;
     background-color: rgb(255, 254, 254);
 }
 
 .lighting .info {
+    height: inherit;
+    font-size: 12px;
     float: right;
-    width: 25%;
+    width: 30%;
     padding: 2.5%;
     color: rgb(255, 255, 255);
     background-color: rgb(185, 158, 133);
-    height: 100%;
 }
 
 .lighting .info h2 {
@@ -625,62 +598,48 @@ h2, h3{
     text-transform: uppercase;
 }
 
+.lighting .info p{
+    line-height: 1.5;
+}
+
 .lighting .lighting-img img {
-    height: 350;
     width: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     border-right: 2px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-
-.lighting .fa-chevron-right,
-.lighting .fa-chevron-left{
-    position: absolute;
-    top: 10%;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border: 3px solid black;
-    padding: 5px;
-}
-
-.lighting .fa-chevron-right:hover,
-.lighting .fa-chevron-left:hover{
-    color: rgb(255, 255, 255);
-    border: 3px solid white;
-}
-
-.lighting .fa-chevron-right{
-    right: 40;
-}
-
-.lighting .fa-chevron-left{
-    left: 40;
 }
 
 /* End Lighting Category */
 
 /* End Categories */
 
+@media screen and (max-width: 630px){
+    .living, .pathroom, .bedroom, .lighting{
+        height: 240px;
+    }
+
+    .living .info p, .pathroom .info p,
+    .bedroom .info p, .lighting .info p{
+        font-size: 8px;
+    }
+}
+
 /* Start Footer */
 
 .footer{
     overflow: hidden;
-    height: 200px;
-    border-top: 2px solid rgb(177, 177, 177);
+    border: 2px solid rgb(177, 177, 177);
     background-color: rgb(236, 236, 236);
+
 }
 
 .footer .section1 {
     float: left;
     width: 25%;
     text-align: center
-
 }
 
 .footer .section1 h2{
@@ -697,7 +656,6 @@ h2, h3{
     width: 60%;
     margin-left: 15%;
     overflow: hidden;
-
 }
 
 .footer .section2 .box-section {
@@ -712,17 +670,307 @@ h2, h3{
 
 .footer .section2 .box-section ul li {
     padding-bottom: 5px;
-    
 }
 
 .footer .section2 .box-section ul li a {
     text-decoration: none;
     color: rgb(121, 121, 121);
-
 }
 
 .footer .section2 .box-section ul li a:hover {
     color: rgb(86, 191, 209);
 }
 
+.footer  .sp-f{
+    font-size: 12px;
+    display: inline-block;
+    background-color: black;
+    color: rgb(231, 231, 231);
+    padding: 6px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
 /* End Footer */
+
+/* Start Media Query To Different Screen */
+
+@media screen and (max-width: 425px){
+    /* Start Header */
+
+.container{
+    /* width: 80%; */
+}
+
+.header{
+    width: 100%;
+}
+
+.header .navbar h4 {
+    font-size: 10px;
+}
+
+.header .navbar .links{
+    font-size: 10px;
+    padding-top: 7px;
+}
+
+.header .h-content{
+    padding-top: 25vh;
+    line-height: 1.5;
+}
+
+.header .h-content h1{
+    font-size: 30px;
+}
+
+.header button{
+    padding: 5px 15px;
+    font-size: 12px;
+}
+
+.header .arrow i{
+    font-size: 10px;
+}
+
+/* End Header */
+
+/* Start Features */
+
+.features{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.features .box{
+    width: 100%;
+    font-size: 10px;
+}
+
+/* End Features */
+
+/* Start Subscibe */
+
+.subscribe{
+    background-image: url('../images/subscribe.jpg');
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.subscribe form {
+    font-size: 10px;
+}
+
+.subscribe form input {
+    padding: 5px 10px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.subscribe form button {
+    padding: 5px 20px;
+}
+
+/* End Subscibe */
+
+/* Start Engineers */
+
+.logo{
+    height: 30px;
+}
+
+.logo .fa-user-tie{   
+    font-size: 20px;
+}
+
+.logo .fa-artstation{
+    font-size: 20px;
+}
+
+.logo .logo-header {
+    font-size: large;
+}
+
+.engineers{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 9px;
+}
+
+.engineers .fa-chevron-right{
+    right: 10px;
+}
+
+.engineers .fa-chevron-left{
+    left: 10px;
+}
+
+/* End Engineers */
+
+/* Start Categories */
+
+.categories .cats {
+    width: 50%;
+}
+
+.categories .cats img {
+    height: 120px;
+    -webkit-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.categories .cats h3 {
+    font-size: 15px;
+}
+
+/* General rules of Categories boxes */
+
+.fa-chevron-right,
+.fa-chevron-left{
+    font-size: 8px;
+    border: 1px solid rgb(247, 232, 165);
+}
+
+.fa-chevron-right:hover,
+.fa-chevron-left:hover{
+    border: 1px solid white;
+}
+
+.fa-chevron-right{
+    right: 5px;
+}
+
+.fa-chevron-left{
+    left: 5px;
+}
+
+/* Start Living Category */
+
+.living{
+    height: 180px;
+    margin: 20px 0;
+}
+.living .info{
+    font-size: 8px;
+}
+.living .info h2 {
+    font-size: 12px;
+}
+
+/* End Living Category */
+
+/* Start Pathroom Category */
+
+.pathroom{
+    height: 180px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.pathroom .info {
+    font-size: 8px;
+}
+
+.pathroom .info h2 {
+    font-size: 12px;
+}
+
+/* End Pathroom Category */
+
+/* Start Bedroom Category */
+
+.bedroom{
+    height: 180px;
+    margin: 20px 0;
+}
+
+.bedroom .info {
+    font-size: 8px;
+}
+
+.bedroom .info h2 {
+    font-size: 12px;
+}
+
+/* End Bedroom Category */
+
+/* Start Lighting Category */
+
+.lighting{
+    height: 180px;
+    margin: 20px 0;
+}
+
+.lighting .info {
+    font-size: 8px;
+}
+
+.lighting .info h2 {
+    font-size: 12px;
+}
+
+/* End Lighting Category */
+
+/* End Categories */
+
+/* Start Footer */
+
+.footer .container{
+    width: 100%;
+    text-align: center;
+}
+
+.footer .section1 {
+    width: 20%;
+}
+
+.footer .section1 h2{
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.footer .section2{
+    width: 70%;
+    margin-left: 10%;
+    font-size: 10px;
+}
+
+.footer .section2 .box-section{
+    width: 33%;
+    
+}
+
+.footer .section2 .box-section ul li {
+    padding-bottom: 5px;
+}
+
+.footer  .sp-f{
+    font-size: 6px;
+    display: inline-block;
+    background-color: black;
+    color: rgb(231, 231, 231);
+    padding: 6px;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+
+/* End Footer */
+
+}
+
+@media screen and (max-width: 330px){
+    .header button{
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}
+
+/* End Media Query To Different Screen */
