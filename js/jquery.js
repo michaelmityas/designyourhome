@@ -12,7 +12,7 @@ $(function () {
 
     $('.header .cat').click(function () {
         $('html, body').animate({
-            scrollTop: $(".cat-logo").offset().top
+            scrollTop: $("#cat-logo").offset().top
         }, 1000);
     });
 
