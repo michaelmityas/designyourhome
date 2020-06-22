@@ -699,10 +699,6 @@ h2, h3{
 @media screen and (max-width: 425px){
     /* Start Header */
 
-.container{
-    /* width: 80%; */
-}
-
 .header{
     width: 100%;
 }
@@ -945,7 +941,6 @@ h2, h3{
 
 .footer .section2 .box-section{
     width: 33%;
-    
 }
 
 .footer .section2 .box-section ul li {
