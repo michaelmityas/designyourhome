@@ -305,6 +305,7 @@ h2, h3{
     display: inline-block;
     margin-left: calc(50vw - 78px);
     height: 40px;
+    box-shadow: 3px 3px 3px #DDD;
 }
 
 .logo .fa-user-tie{   
